@@ -1,0 +1,13 @@
+SVC_PrintStr:
+  - takes pointer to string in R0, length of string in R1
+  - writes a string out to the terminal, from the current cursor position
+  - updates the cursor
+
+SVC_PrintC
+  - takes the character in R0
+  - writes a single character out the terminal at the current cursor position
+  - updates the cursor
+
+SVC_SetPix
+  - set pixel at x: R0, y: R1 to the pixel value at R2
+  - doesn't touch the cursor
